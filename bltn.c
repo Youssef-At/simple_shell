@@ -1,8 +1,5 @@
 #include "shell.h"
 
-int set_shellVar(char **amgt, char __attribute__((__unused__)) **ourfront);
-void set_alias(char *var_name, char *value);
-void print_alias(alstype *alias);
 
 /**
  * set_shellVar - this function allow to prints all aliases
@@ -11,6 +8,11 @@ void print_alias(alstype *alias);
  * Return: return -1 or 0.
  * YOUSSEF ATAIFA & DOHA ELOUAKILI
  */
+
+int set_shellVar(char **amgt, char __attribute__((__unused__)) **ourfront);
+void set_alias(char *var_name, char *value);
+void print_alias(alstype *alias);
+
 int set_shellVar(char **amgt, char __attribute__((__unused__)) **ourfront)
 {
 	alstype *temp = aliases;

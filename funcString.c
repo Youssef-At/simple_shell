@@ -1,9 +1,5 @@
 #include "shell.h"
 
-int stringLen(const char *s);
-char *copy_string(char *ourDesti, const char *oursource);
-char *string_concat(char *ourDesti, const char *oursource);
-char *str_n_concat(char *ourDesti, const char *oursource, size_t n);
 
 /**
  * stringLen - this function is a copy of strlen.
@@ -11,6 +7,12 @@ char *str_n_concat(char *ourDesti, const char *oursource, size_t n);
  * Return: lenght of str.
  * YOUSSEF ATAIFA & DOHA ELOUAKILI
  */
+
+int stringLen(const char *s);
+char *copy_string(char *ourDesti, const char *oursource);
+char *string_concat(char *ourDesti, const char *oursource);
+char *str_n_concat(char *ourDesti, const char *oursource, size_t n);
+
 int stringLen(const char *s)
 {
 	int length = 0;

@@ -1,9 +1,5 @@
 #include "shell.h"
 
-int envir_shell(char **amgt, char __attribute__((__unused__)) **ourfront);
-int set_envir_shell(char **amgt, char __attribute__((__unused__)) **ourfront);
-int unsetEnvShell(char **amgt, char __attribute__((__unused__)) **ourfront);
-
 /**
  * envir_shell - this function print envi used currnetly.
  * @amgt: arrray of amgt.
@@ -12,6 +8,11 @@ int unsetEnvShell(char **amgt, char __attribute__((__unused__)) **ourfront);
  * Descr: print one arg per line
  * YOUSSEF ATAIFA & DOHA ELOUAKILI
  */
+
+int envir_shell(char **amgt, char __attribute__((__unused__)) **ourfront);
+int set_envir_shell(char **amgt, char __attribute__((__unused__)) **ourfront);
+int unsetEnvShell(char **amgt, char __attribute__((__unused__)) **ourfront);
+
 int envir_shell(char **amgt, char __attribute__((__unused__)) **ourfront)
 {
 	int index;

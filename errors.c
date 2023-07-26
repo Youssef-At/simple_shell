@@ -1,8 +1,5 @@
 #include "shell.h"
 
-int num_len(int num);
-char *_itoa(int num);
-int func_createErr(char **amgt, int err);
 
 /**
  * num_len - this function to count the length of digit.
@@ -10,6 +7,11 @@ int func_createErr(char **amgt, int err);
  * Return: return the lenght of digit.
  * YOUSSEF ATAIFA & DOHA ELOUAKILI
  */
+
+int num_len(int num);
+char *_itoa(int num);
+int func_createErr(char **amgt, int err);
+
 int num_len(int num)
 {
 	unsigned int num1;

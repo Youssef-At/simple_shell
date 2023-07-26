@@ -1,7 +1,5 @@
-#include "shell.h"
+#include "shell"
 
-int cant_open(char *file_path);
-int prFileCmd(char *file_path, int *exeRet);
 
 /**
  * cant_open - print can not open error.
@@ -9,6 +7,9 @@ int prFileCmd(char *file_path, int *exeRet);
  * Return: num 127.
  * YOUSSEF ATAIFA & DOHA ELOUAKILI
  */
+
+int cant_open(char *file_path);
+int prFileCmd(char *file_path, int *exeRet);
 
 int cant_open(char *file_path)
 {

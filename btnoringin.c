@@ -1,8 +1,5 @@
 #include "shell.h"
-int (*get_builtin(char *command))(char **amgt, char **ourfront);
-int exit_shell(char **amgt, char **ourfront);
-int change_fileDir(char **amgt, char __attribute__((__unused__)) **ourfront);
-int helper_shell(char **amgt, char __attribute__((__unused__)) **ourfront);
+
 
 /**
  * get_builtin - function excute cmd.
@@ -10,6 +7,12 @@ int helper_shell(char **amgt, char __attribute__((__unused__)) **ourfront);
  * Return: return an integer.
  * YOUSSEF ATAIFA & DOHA ELOUAKILI
  */
+
+int (*get_builtin(char *command))(char **amgt, char **ourfront);
+int exit_shell(char **amgt, char **ourfront);
+int change_fileDir(char **amgt, char __attribute__((__unused__)) **ourfront);
+int helper_shell(char **amgt, char __attribute__((__unused__)) **ourfront);
+
 int (*get_builtin(char *command))(char **amgt, char **ourfront)
 {
 	bltnType funcs[] = {

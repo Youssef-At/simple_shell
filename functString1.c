@@ -1,10 +1,5 @@
 #include "shell.h"
 
-char *char_string(char *s, char c);
-int copy_of_spn(char *s, char *accept);
-int compare_string(char *string1, char *string2);
-int ncmp_string(const char *string1, const char *string2, size_t n);
-
 /**
  * char_string - search for char in a str.
  * @s: str to be searched.
@@ -12,6 +7,13 @@ int ncmp_string(const char *string1, const char *string2, size_t n);
  * Return: return pointer & NULL.
  * YOUSSEF ATAIFA & DOHA ELOUAKILI
  */
+
+char *char_string(char *s, char c);
+int copy_of_spn(char *s, char *accept);
+int compare_string(char *string1, char *string2);
+int ncmp_string(const char *string1, const char *string2, size_t n);
+
+
 char *char_string(char *s, char c)
 {
 	int index;

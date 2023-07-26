@@ -1,8 +1,5 @@
 #include "shell.h"
 
-void *fn_reset_sz(void *ptr, unsigned int old_size, unsigned int new_size);
-void assign_lineptr(char **lineptr, size_t *n, char *buffer, size_t b);
-ssize_t fn_get_ln(char **lineptr, size_t *n, FILE *stream);
 
 /**
  * fn_reset_sz - this function change the size of ptr.
@@ -12,6 +9,11 @@ ssize_t fn_get_ln(char **lineptr, size_t *n, FILE *stream);
  * Return: return old or new size.
  * YOUSSEF ATAIFA & DOHA ELOUAKILI
  */
+
+void *fn_reset_sz(void *ptr, unsigned int old_size, unsigned int new_size);
+void assign_lineptr(char **lineptr, size_t *n, char *buffer, size_t b);
+ssize_t fn_get_ln(char **lineptr, size_t *n, FILE *stream);
+
 void *fn_reset_sz(void *ourptr, unsigned int sizeOld, unsigned int sizeNew)
 {
 	void *mem;

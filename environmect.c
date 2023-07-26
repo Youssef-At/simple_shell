@@ -1,14 +1,15 @@
 #include "shell.h"
 
-char **envir_fn_cp(void);
-void fn_to_free_envir(void);
-char **fn_to_get_envir(const char *var);
-
 /**
  * envir_fn_cp - this function create copy of envir.
  * Return: return NULL or double pointer.
  * YOUSSEF ATAIFA & DOHA ELOUAKILI
  */
+
+char **envir_fn_cp(void);
+void fn_to_free_envir(void);
+char **fn_to_get_envir(const char *var);
+
 char **envir_fn_cp(void)
 {
 	char **new_environ;
