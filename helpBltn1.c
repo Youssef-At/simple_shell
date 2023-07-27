@@ -1,15 +1,16 @@
 #include "shell.h"
 
+/**
+ * allHelper - this function display commands possible.
+ * YOUSSEF ATAIFA & DOHA ELOUAKILI
+ */
+
 void allHelper(void);
 void alsHelper(void);
 void chdirHelper(void);
 void extHelper(void);
 void hpHelper(void);
 
-/**
- * allHelper - this function display commands possible.
- * YOUSSEF ATAIFA & DOHA ELOUAKILI
- */
 void allHelper(void)
 {
 	char *ourmsg = "Shellby\nThese shell commands are defined internally.\n";
@@ -31,7 +32,7 @@ void allHelper(void)
 
 /**
  * alsHelper - this function display info about command.
- * 
+ *
  */
 void alsHelper(void)
 {
@@ -54,7 +55,7 @@ void alsHelper(void)
 
 /**
  * chdirHelper - this function display info about cd command.
- * 
+ *
  */
 void chdirHelper(void)
 {
@@ -75,7 +76,7 @@ void chdirHelper(void)
 
 /**
  * extHelper - this function display info about exit command.
- * 
+ *
  */
 void extHelper(void)
 {
